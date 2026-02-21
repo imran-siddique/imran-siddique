@@ -1,10 +1,13 @@
 <div align="center">
 
-# Hi, I'm Imran Siddique
+# Imran Siddique
 
-**Building the governance layer for autonomous AI agents**
+**The safety, trust, and reliability platform for production AI agents**
+
+*We are building the Kubernetes for AI agent governance*
 
 [![Website](https://img.shields.io/badge/imransiddique.com-blue?style=flat-square&logo=google-chrome&logoColor=white)](https://imransiddique.com)
+[![PyPI](https://img.shields.io/badge/pip_install-agent--governance-blue?style=flat-square&logo=pypi&logoColor=white)](https://pypi.org/project/agent-governance/)
 [![GitHub](https://img.shields.io/badge/GitHub-imran--siddique-181717?style=flat-square&logo=github)](https://github.com/imran-siddique)
 [![Sponsor](https://img.shields.io/badge/Sponsor-%E2%9D%A4%EF%B8%8F-ff69b4?style=flat-square)](https://github.com/sponsors/imran-siddique)
 
@@ -12,45 +15,51 @@
 
 ---
 
-## The Agent Governance Ecosystem
+## The Problem
 
-I'm building an open-source ecosystem for **governing autonomous AI agents** -- giving them the safety rails, trust networks, and reliability guarantees they need to operate in production.
+The AI agent market is projected to reach **$47B by 2030**. Enterprises are deploying autonomous agents that execute tools, access sensitive data, and make decisions -- with **no built-in governance, audit trails, or policy enforcement**.
+
+A2A gives agents a common language. MCP gives agents tools. **Neither enforces trust.**
+
+## The Solution: Agent Governance Ecosystem
+
+An open-source stack for governing autonomous AI agents in production -- the **SSL/TLS equivalent for AI agent-to-agent communication**.
 
 ```
-                    +------------------+
-                    |    Agent OS      |   Policy enforcement kernel
-                    |  1,500+ tests    |   POSIX-inspired governance
-                    +--------+---------+
-                             |
-              +--------------+--------------+
-              |                             |
-    +---------+----------+     +------------+---------+
-    |    AgentMesh       |     |    Agent SRE         |
-    |  Trust Network     |     |  Reliability Platform|
-    |  1,413 tests       |     |  1,071 tests         |
-    +--------+-----------+     +------------+---------+
-              |                             |
-              +--------------+--------------+
-                             |
-                    +--------+---------+
-                    | Agent Hypervisor |   Runtime supervisor
-                    | Execution Rings  |   Saga orchestration
-                    |   326 tests      |   Joint liability
-                    +------------------+
+pip install agent-governance[full]
+```
+
+```
++------------------------------------------------------------------+
+|                    AGENT GOVERNANCE STACK                         |
++------------------------------------------------------------------+
+|  AGENT HYPERVISOR  |  Runtime supervisor, Execution Rings (0-3)  |
+|    (Runtime)       |  Joint Liability, Saga Orchestration         |
++--------------------+---------------------------------------------+
+|  AGENT SRE         |  SLOs, chaos testing, canary deploys        |
+|    (Reliability)   |  Incident response, runbook automation      |
++--------------------+---------------------------------------------+
+|  AGENTMESH         |  Zero-trust identity, mTLS, protocol bridge |
+|    (Trust)         |  A2A + MCP + IATP, behavioral scoring       |
++--------------------+---------------------------------------------+
+|  AGENT OS          |  Policy enforcement kernel, <0.1ms p99      |
+|    (Kernel)        |  Capability-based access, Merkle audit logs |
++------------------------------------------------------------------+
 ```
 
 ### Repositories
 
-| Repo | Description | Tests | Status |
-|------|-------------|-------|--------|
-| [**Agent OS**](https://github.com/imran-siddique/agent-os) | Kernel architecture for governing autonomous AI agents | 1,500+ | [![CI](https://github.com/imran-siddique/agent-os/actions/workflows/ci.yml/badge.svg)](https://github.com/imran-siddique/agent-os/actions) |
-| [**AgentMesh**](https://github.com/imran-siddique/agent-mesh) | Secure nervous system for cloud-native agent ecosystems | 1,413 | [![CI](https://github.com/imran-siddique/agent-mesh/actions/workflows/ci.yml/badge.svg)](https://github.com/imran-siddique/agent-mesh/actions) |
-| [**Agent SRE**](https://github.com/imran-siddique/agent-sre) | SRE for AI agents -- SLOs, chaos testing, canary deploys | 1,071 | [![CI](https://github.com/imran-siddique/agent-sre/actions/workflows/ci.yml/badge.svg)](https://github.com/imran-siddique/agent-sre/actions) |
-| [**Agent Hypervisor**](https://github.com/imran-siddique/agent-hypervisor) | Runtime supervisor with Execution Rings and Saga Orchestration | 326 | [![CI](https://github.com/imran-siddique/agent-hypervisor/actions/workflows/ci.yml/badge.svg)](https://github.com/imran-siddique/agent-hypervisor/actions) |
+| Component | Description | Tests | Install |
+|-----------|-------------|-------|---------|
+| [**Agent OS**](https://github.com/imran-siddique/agent-os) | Governance kernel -- policy enforcement in <0.1ms p99 | 1,500+ | `pip install agent-os-kernel` |
+| [**AgentMesh**](https://github.com/imran-siddique/agent-mesh) | SSL for AI Agents -- zero-trust agent communication | 1,400+ | `pip install agentmesh-platform` |
+| [**Agent Hypervisor**](https://github.com/imran-siddique/agent-hypervisor) | Runtime supervisor with Execution Rings and Saga Orchestration | 326+ | `pip install agent-hypervisor` |
+| [**Agent SRE**](https://github.com/imran-siddique/agent-sre) | SRE for AI agents -- SLOs, chaos testing, observability | 1,070+ | `pip install agent-sre` |
+| [**agent-governance**](https://github.com/imran-siddique/agent-governance) | Meta-package -- full stack in one install | -- | `pip install agent-governance[full]` |
 
-**Total: 4,310+ tests across 17 modules**
+**Total: 4,300+ tests | 5 repos | 17 modules | 6 framework integrations**
 
-### Integrated Into Major Frameworks
+### Production Integrations
 
 <p align="center">
   <a href="https://github.com/langgenius/dify-plugins/pull/2060"><img src="https://img.shields.io/badge/Dify-65K_%E2%AD%90_Merged-success?style=for-the-badge" alt="Dify"></a>
@@ -59,29 +68,34 @@ I'm building an open-source ecosystem for **governing autonomous AI agents** -- 
   <a href="https://github.com/microsoft/agent-lightning/pull/478"><img src="https://img.shields.io/badge/Agent_Lightning-15K_%E2%AD%90_Merged-success?style=for-the-badge" alt="Agent-Lightning"></a>
 </p>
 
-Active engagement with **20+ major AI frameworks** including OpenAI, Anthropic, Google A2A, Oracle, AutoGen, CrewAI, Haystack, PydanticAI, and more.
+Active proposals at **20+ major AI frameworks**: OpenAI, Anthropic, Google A2A, Oracle, AutoGen, CrewAI, Haystack, PydanticAI, Semantic Kernel, and more.
 
 ---
 
 ### What Makes This Different?
 
-Most AI agent frameworks focus on **building agents**. This ecosystem focuses on **governing them**:
+Most frameworks focus on **building agents**. We focus on **governing them**:
 
-- **Execution Rings** -- CPU ring-inspired privilege isolation (Ring 0-3) for AI agents
-- **Joint Liability** -- Agents stake reputation to vouch for each other, with Shapley-value fault attribution
-- **Saga Orchestration** -- Multi-agent transactions with automatic compensation on failure
-- **SLO-Driven Reliability** -- Error budgets, chaos testing, and canary deploys for agent systems
-- **Cryptographic Trust** -- DID-based identity, Merkle audit trails, behavioral drift detection
+| Capability | How It Works |
+|------------|-------------|
+| **Execution Rings** | CPU ring-inspired privilege isolation (Ring 0-3) for AI agents |
+| **Joint Liability** | Shapley-value fault attribution across agent groups |
+| **Saga Orchestration** | Multi-agent transactions with automatic compensation |
+| **Cryptographic Trust** | DID-based identity, Merkle audit trails, behavioral scoring |
+| **SLO-Driven Reliability** | Error budgets, chaos testing, canary deploys |
+| **<0.1ms Governance** | Deterministic policy enforcement with zero agent code changes |
 
 ---
 
 <div align="center">
 
-**If this work interests you, please star the repos -- it helps others discover agent governance.**
+**Star the repos to help others discover AI agent governance**
 
 [![Agent OS](https://img.shields.io/github/stars/imran-siddique/agent-os?style=social&label=Agent%20OS)](https://github.com/imran-siddique/agent-os)
 [![AgentMesh](https://img.shields.io/github/stars/imran-siddique/agent-mesh?style=social&label=AgentMesh)](https://github.com/imran-siddique/agent-mesh)
-[![Agent SRE](https://img.shields.io/github/stars/imran-siddique/agent-sre?style=social&label=Agent%20SRE)](https://github.com/imran-siddique/agent-sre)
 [![Agent Hypervisor](https://img.shields.io/github/stars/imran-siddique/agent-hypervisor?style=social&label=Hypervisor)](https://github.com/imran-siddique/agent-hypervisor)
+[![Agent SRE](https://img.shields.io/github/stars/imran-siddique/agent-sre?style=social&label=Agent%20SRE)](https://github.com/imran-siddique/agent-sre)
+
+**[imransiddique.com](https://imransiddique.com)** | **[Documentation](https://imransiddique.com/agent-os-docs/)**
 
 </div>
