@@ -7,7 +7,7 @@
 *We are building the Kubernetes for AI agent governance*
 
 [![Website](https://img.shields.io/badge/imransiddique.com-blue?style=flat-square&logo=google-chrome&logoColor=white)](https://imransiddique.com)
-[![PyPI](https://img.shields.io/badge/pip_install-agent--governance-blue?style=flat-square&logo=pypi&logoColor=white)](https://pypi.org/project/agent-governance/)
+[![PyPI](https://img.shields.io/badge/pip_install-ai--agent--governance-blue?style=flat-square&logo=pypi&logoColor=white)](https://pypi.org/project/ai-agent-governance/)
 [![GitHub](https://img.shields.io/badge/GitHub-imran--siddique-181717?style=flat-square&logo=github)](https://github.com/imran-siddique)
 [![Sponsor](https://img.shields.io/badge/Sponsor-%E2%9D%A4%EF%B8%8F-ff69b4?style=flat-square)](https://github.com/sponsors/imran-siddique)
 
@@ -26,7 +26,7 @@ A2A gives agents a common language. MCP gives agents tools. **Neither enforces t
 An open-source stack for governing autonomous AI agents in production -- the **SSL/TLS equivalent for AI agent-to-agent communication**.
 
 ```
-pip install agent-governance[full]
+pip install ai-agent-governance[full]
 ```
 
 ```
@@ -55,7 +55,7 @@ pip install agent-governance[full]
 | [**AgentMesh**](https://github.com/imran-siddique/agent-mesh) | SSL for AI Agents -- zero-trust agent communication | 1,400+ | `pip install agentmesh-platform` |
 | [**Agent Hypervisor**](https://github.com/imran-siddique/agent-hypervisor) | Runtime supervisor with Execution Rings and Saga Orchestration | 326+ | `pip install agent-hypervisor` |
 | [**Agent SRE**](https://github.com/imran-siddique/agent-sre) | SRE for AI agents -- SLOs, chaos testing, observability | 1,070+ | `pip install agent-sre` |
-| [**agent-governance**](https://github.com/imran-siddique/agent-governance) | Meta-package -- full stack in one install | -- | `pip install agent-governance[full]` |
+| [**agent-governance**](https://github.com/imran-siddique/agent-governance) | Meta-package -- full stack in one install | -- | `pip install ai-agent-governance[full]` |
 
 **Total: 4,300+ tests | 5 repos | 17 modules | 6 framework integrations**
 
