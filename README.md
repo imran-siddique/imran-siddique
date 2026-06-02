@@ -2,28 +2,30 @@
 
 # Imran Siddique
 
-**The safety, trust, and reliability platform for production AI agents**
-
-*We are building the Kubernetes for AI agent governance*
+**Principal Engineering Leader at Microsoft | Creator of [microsoft/agent-governance-toolkit](https://github.com/microsoft/agent-governance-toolkit)**
 
 [![Website](https://img.shields.io/badge/imransiddique.com-blue?style=flat-square&logo=google-chrome&logoColor=white)](https://imransiddique.com)
 [![PyPI](https://img.shields.io/badge/pip_install-ai--agent--governance-blue?style=flat-square&logo=pypi&logoColor=white)](https://pypi.org/project/ai-agent-governance/)
-[![GitHub](https://img.shields.io/badge/GitHub-imran--siddique-181717?style=flat-square&logo=github)](https://github.com/imran-siddique)
-[![Sponsor](https://img.shields.io/badge/Sponsor-%E2%9D%A4%EF%B8%8F-ff69b4?style=flat-square)](https://github.com/sponsors/imran-siddique)
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-imransiddique1986-0077B5?style=flat-square&logo=linkedin)](https://linkedin.com/in/imransiddique1986)
+[![Sponsor](https://img.shields.io/badge/Sponsor-ff69b4?style=flat-square)](https://github.com/sponsors/imran-siddique)
 
 </div>
 
 ---
 
-## The Problem
+18 years at Microsoft building core infrastructure: SQL Azure, Azure DevOps Code Search, Azure for Industries, and Azure AI. Currently architecting the backend for Azure Copilot and leading the open-source [Agent Governance Toolkit](https://github.com/microsoft/agent-governance-toolkit) -- the runtime governance layer for production AI agents.
 
-The AI agent market is projected to reach **$47B by 2030**. Enterprises are deploying autonomous agents that execute tools, access sensitive data, and make decisions -- with **no built-in governance, audit trails, or policy enforcement**.
+My approach: **Scale by Subtraction**. The most resilient systems are built by removing unnecessary complexity, not adding layers on top of it.
 
-A2A gives agents a common language. MCP gives agents tools. **Neither enforces trust.**
+## The problem
 
-## The Solution: Agent Governance Ecosystem
+A2A gives agents a common language. MCP gives agents tools. Neither enforces trust.
 
-An open-source stack for governing autonomous AI agents in production -- the **SSL/TLS equivalent for AI agent-to-agent communication**.
+Enterprises are deploying autonomous agents that execute tools, access sensitive data, and make decisions -- with no governance, audit trails, or policy enforcement built in.
+
+## Agent Governance Toolkit
+
+The open-source governance layer for production AI agents. Four pillars: Identity, Policy, Observability, Recovery.
 
 ```
 pip install ai-agent-governance[full]
@@ -39,27 +41,47 @@ pip install ai-agent-governance[full]
 |  AGENT SRE         |  SLOs, chaos testing, canary deploys        |
 |    (Reliability)   |  Incident response, runbook automation      |
 +--------------------+---------------------------------------------+
-|  AGENTMESH         |  Zero-trust identity, mTLS, protocol bridge |
-|    (Trust)         |  A2A + MCP + IATP, behavioral scoring       |
+|  AGENTMESH         |  Zero-trust identity, DID/SPIFFE, mTLS      |
+|    (Trust)         |  A2A + MCP governance, behavioral scoring   |
 +--------------------+---------------------------------------------+
 |  AGENT OS          |  Policy enforcement kernel, <0.1ms p99      |
 |    (Kernel)        |  Capability-based access, Merkle audit logs |
 +------------------------------------------------------------------+
 ```
 
-### Repositories
+**10 formal specifications | 992 conformance tests | 25 ADRs | Python SDK + .NET SDK + Rust core**
 
-| Component | Description | Tests | Install |
-|-----------|-------------|-------|---------|
-| [**Agent OS**](https://github.com/imran-siddique/agent-os) | Governance kernel -- policy enforcement in <0.1ms p99 | 1,500+ | `pip install agent-os-kernel` |
-| [**AgentMesh**](https://github.com/imran-siddique/agent-mesh) | SSL for AI Agents -- zero-trust agent communication | 1,400+ | `pip install agentmesh-platform` |
-| [**Agent Hypervisor**](https://github.com/imran-siddique/agent-hypervisor) | Runtime supervisor with Execution Rings and Saga Orchestration | 326+ | `pip install agent-hypervisor` |
-| [**Agent SRE**](https://github.com/imran-siddique/agent-sre) | SRE for AI agents -- SLOs, chaos testing, observability | 1,070+ | `pip install agent-sre` |
-| [**agent-governance**](https://github.com/imran-siddique/agent-governance) | Meta-package -- full stack in one install | -- | `pip install ai-agent-governance[full]` |
+[![AGT](https://img.shields.io/github/stars/microsoft/agent-governance-toolkit?style=social&label=Agent%20Governance%20Toolkit)](https://github.com/microsoft/agent-governance-toolkit)
 
-**Total: 4,300+ tests | 5 repos | 17 modules | 6 framework integrations | 8+ awesome lists**
+### What makes this different
 
-### Production Integrations
+| Capability | How it works |
+|------------|--------------|
+| **Execution Rings** | CPU ring-inspired privilege isolation (Ring 0-3) for agent actions |
+| **VADP** | Cryptographic delegation chains where each step narrows scope, never widens |
+| **AgentMesh Identity** | DID/SPIFFE-based durable cryptographic identity, not ephemeral session tokens |
+| **Decision BOM** | Reverse-traceable decision provenance via Merkle chains |
+| **GovernanceEventSink** | Pluggable observability backend, no vendor coupling |
+| **Trust Score Decay** | Configurable half-life: a trust score at deployment time is meaningless 6 months later |
+
+---
+
+## Upstream contributions
+
+| Project | Contribution |
+|---------|-------------|
+| Google ADK | `AgentGovernancePlugin`: governance lifecycle hooks for the ADK agent runtime |
+| Oracle Agent Spec | `ToolPolicy`, `ExecutionGuard`, `PolicyViolation` tracing additions |
+| AAIF / LF AI & Data | Agent identity standards and governance interoperability |
+| CoSAI WS4 | Agent governance working group |
+| OWASP ASI | Agentic security integration (Top 10 for Agentic Applications) |
+| OpenSSF | Scorecard improvements, supply chain security patterns |
+
+Active integration proposals at 15+ AI frameworks including AutoGen, CrewAI, Haystack, PydanticAI, and Semantic Kernel.
+
+---
+
+## Integrations
 
 <p align="center">
   <a href="https://github.com/langgenius/dify-plugins/pull/2060"><img src="https://img.shields.io/badge/Dify-65K_%E2%AD%90_Merged-success?style=for-the-badge" alt="Dify"></a>
@@ -68,7 +90,7 @@ pip install ai-agent-governance[full]
   <a href="https://github.com/microsoft/agent-lightning/pull/478"><img src="https://img.shields.io/badge/Agent_Lightning-15K_%E2%AD%90_Merged-success?style=for-the-badge" alt="Agent-Lightning"></a>
 </p>
 
-### Featured In
+## Featured in
 
 <p align="center">
   <a href="https://github.com/Shubhamsaboo/awesome-llm-apps"><img src="https://img.shields.io/badge/awesome--llm--apps-92K_%E2%AD%90-orange?style=flat-square" alt="awesome-llm-apps"></a>
@@ -81,34 +103,10 @@ pip install ai-agent-governance[full]
   <a href="https://github.com/MicrosoftDocs/community-content/pull/287"><img src="https://img.shields.io/badge/Microsoft_Community-Expert-purple?style=flat-square" alt="Microsoft Community Expert"></a>
 </p>
 
-Active proposals at **20+ major AI frameworks**: OpenAI, Anthropic, Google A2A, Oracle, AutoGen, CrewAI, Haystack, PydanticAI, Semantic Kernel, and more.
-
----
-
-### What Makes This Different?
-
-Most frameworks focus on **building agents**. We focus on **governing them**:
-
-| Capability | How It Works |
-|------------|-------------|
-| **Execution Rings** | CPU ring-inspired privilege isolation (Ring 0-3) for AI agents |
-| **Joint Liability** | Shapley-value fault attribution across agent groups |
-| **Saga Orchestration** | Multi-agent transactions with automatic compensation |
-| **Cryptographic Trust** | DID-based identity, Merkle audit trails, behavioral scoring |
-| **SLO-Driven Reliability** | Error budgets, chaos testing, canary deploys |
-| **<0.1ms Governance** | Deterministic policy enforcement with zero agent code changes |
-
 ---
 
 <div align="center">
 
-**Star the repos to help others discover AI agent governance**
-
-[![Agent OS](https://img.shields.io/github/stars/imran-siddique/agent-os?style=social&label=Agent%20OS)](https://github.com/imran-siddique/agent-os)
-[![AgentMesh](https://img.shields.io/github/stars/imran-siddique/agent-mesh?style=social&label=AgentMesh)](https://github.com/imran-siddique/agent-mesh)
-[![Agent Hypervisor](https://img.shields.io/github/stars/imran-siddique/agent-hypervisor?style=social&label=Hypervisor)](https://github.com/imran-siddique/agent-hypervisor)
-[![Agent SRE](https://img.shields.io/github/stars/imran-siddique/agent-sre?style=social&label=Agent%20SRE)](https://github.com/imran-siddique/agent-sre)
-
-**[imransiddique.com](https://imransiddique.com)** | **[Documentation](https://imransiddique.com/agent-os-docs/)**
+**[imransiddique.com](https://imransiddique.com)**
 
 </div>
