@@ -96,16 +96,15 @@ pip install ai-agent-governance[full]
 ## Integrations
 
 <p align="center">
-  <a href="https://github.com/langgenius/dify-plugins/pull/2060"><img src="https://img.shields.io/badge/Dify-65K_%E2%AD%90_Merged-success?style=for-the-badge" alt="Dify"></a>
-  <a href="https://github.com/run-llama/llama_index/pull/20644"><img src="https://img.shields.io/badge/LlamaIndex-47K_%E2%AD%90_Merged-success?style=for-the-badge" alt="LlamaIndex"></a>
+  <a href="https://github.com/run-llama/llama_index/pull/20644"><img src="https://img.shields.io/badge/LlamaIndex-50K_%E2%AD%90_Merged-success?style=for-the-badge" alt="LlamaIndex"></a>
   <a href="https://github.com/github/awesome-copilot/pull/755"><img src="https://img.shields.io/badge/GitHub_Copilot-Merged-success?style=for-the-badge" alt="Copilot"></a>
-  <a href="https://github.com/microsoft/agent-lightning/pull/478"><img src="https://img.shields.io/badge/Agent_Lightning-15K_%E2%AD%90_Merged-success?style=for-the-badge" alt="Agent-Lightning"></a>
+  <a href="https://github.com/microsoft/agent-lightning/pull/478"><img src="https://img.shields.io/badge/Agent_Lightning-17K_%E2%AD%90_Merged-success?style=for-the-badge" alt="Agent-Lightning"></a>
 </p>
 
 ## Featured in
 
 <p align="center">
-  <a href="https://github.com/Shubhamsaboo/awesome-llm-apps"><img src="https://img.shields.io/badge/awesome--llm--apps-92K_%E2%AD%90-orange?style=flat-square" alt="awesome-llm-apps"></a>
+  <a href="https://github.com/Shubhamsaboo/awesome-llm-apps/pull/467"><img src="https://img.shields.io/badge/awesome--llm--apps-112K_%E2%AD%90-orange?style=flat-square" alt="awesome-llm-apps"></a>
   <a href="https://github.com/Jenqyang/Awesome-AI-Agents/pull/45"><img src="https://img.shields.io/badge/Awesome--AI--Agents-listed-orange?style=flat-square" alt="Awesome-AI-Agents"></a>
   <a href="https://github.com/github/awesome-copilot/pull/755"><img src="https://img.shields.io/badge/awesome--copilot-listed-orange?style=flat-square" alt="awesome-copilot"></a>
   <a href="https://github.com/magsther/awesome-opentelemetry/pull/24"><img src="https://img.shields.io/badge/awesome--opentelemetry-listed-orange?style=flat-square" alt="awesome-opentelemetry"></a>
