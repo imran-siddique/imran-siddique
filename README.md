@@ -2,7 +2,7 @@
 
 # Imran Siddique
 
-**Principal Engineering Leader at Microsoft | Creator of [microsoft/agent-governance-toolkit](https://github.com/microsoft/agent-governance-toolkit)**
+**Chief Platform Officer at [Opaque Systems](https://opaque.co) | Creator of [Agent Governance Toolkit](https://github.com/microsoft/agent-governance-toolkit)**
 
 [![Website](https://img.shields.io/badge/imransiddique.com-blue?style=flat-square&logo=google-chrome&logoColor=white)](https://imransiddique.com)
 [![PyPI](https://img.shields.io/badge/pip_install-ai--agent--governance-blue?style=flat-square&logo=pypi&logoColor=white)](https://pypi.org/project/ai-agent-governance/)
@@ -13,19 +13,33 @@
 
 ---
 
-18 years at Microsoft building core infrastructure: SQL Azure, Azure DevOps Code Search, Azure for Industries, and Azure AI. Currently architecting the backend for Azure Copilot and leading the open-source [Agent Governance Toolkit](https://github.com/microsoft/agent-governance-toolkit) -- the runtime governance layer for production AI agents.
+18 years at Microsoft building core infrastructure: SQL Azure, Azure DevOps Code Search, Azure for Industries, Microsoft Learn, and founding the Agent Governance Toolkit. In June 2026, I joined [Opaque Systems](https://opaque.co) as Chief Platform Officer. AGT is being donated to the [Agentic AI Foundation](https://agenticai.foundation) as the policy-layer standard for enterprise autonomous systems.
 
 My approach: **Scale by Subtraction**. The most resilient systems are built by removing unnecessary complexity, not adding layers on top of it.
 
 ## The problem
 
-A2A gives agents a common language. MCP gives agents tools. Neither enforces trust.
+Enterprises are giving AI agents real reach: email, CRMs, databases, financial systems. Most of the industry has tried to solve this at the content layer -- guardrails that screen what goes in and what comes out.
 
-Enterprises are deploying autonomous agents that execute tools, access sensitive data, and make decisions -- with no governance, audit trails, or policy enforcement built in.
+Guardrails help, but they leak. No filter reliably predicts a non-deterministic system. A single piece of untrusted content -- an email, a document, a support ticket -- can contain hidden instructions that redirect an agent into quietly exfiltrating internal data.
+
+You don't run a regulated business on probably.
+
+## What I'm building at Opaque
+
+Three-layer trust architecture for the agentic AI era:
+
+| Layer | What it does |
+|-------|-------------|
+| **Behavioral policy** | What an agent is allowed to do -- the policy engine I built in AGT |
+| **Confidential computing** | Hardware-attested execution where data cannot leak even if the software is compromised |
+| **Cryptographic proof** | Every agent action governed by policy, enforced in silicon, and auditor-ready |
+
+Not guardrails that probably hold. Proof that they did.
 
 ## Agent Governance Toolkit
 
-The open-source governance layer for production AI agents. Four pillars: Identity, Policy, Observability, Recovery.
+The open-source governance layer for production AI agents. Now at the Agentic AI Foundation.
 
 ```
 pip install ai-agent-governance[full]
@@ -49,7 +63,7 @@ pip install ai-agent-governance[full]
 +------------------------------------------------------------------+
 ```
 
-**10 formal specifications | 992 conformance tests | 25 ADRs | Python SDK + .NET SDK + Rust core**
+**10 formal specifications | 992 conformance tests | 25 ADRs | Python SDK + .NET SDK + Rust core | 2,800+ stars | 300K+ monthly downloads**
 
 [![AGT](https://img.shields.io/github/stars/microsoft/agent-governance-toolkit?style=social&label=Agent%20Governance%20Toolkit)](https://github.com/microsoft/agent-governance-toolkit)
 
@@ -76,8 +90,6 @@ pip install ai-agent-governance[full]
 | CoSAI WS4 | Agent governance working group |
 | OWASP ASI | Agentic security integration (Top 10 for Agentic Applications) |
 | OpenSSF | Scorecard improvements, supply chain security patterns |
-
-Active integration proposals at 15+ AI frameworks including AutoGen, CrewAI, Haystack, PydanticAI, and Semantic Kernel.
 
 ---
 
