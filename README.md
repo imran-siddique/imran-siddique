@@ -8,6 +8,7 @@
 [![PyPI](https://img.shields.io/badge/pip_install-ai--agent--governance-blue?style=flat-square&logo=pypi&logoColor=white)](https://pypi.org/project/ai-agent-governance/)
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-imransiddique1986-0077B5?style=flat-square&logo=linkedin)](https://linkedin.com/in/imransiddique1986)
 [![Sponsor](https://img.shields.io/badge/Sponsor-ff69b4?style=flat-square)](https://github.com/sponsors/imran-siddique)
+[![Awesome AI Governance](https://awesome.re/badge.svg)](https://github.com/imran-siddique/awesome-ai-governance)
 
 </div>
 
