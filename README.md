@@ -64,7 +64,7 @@ pip install ai-agent-governance[full]
 +------------------------------------------------------------------+
 ```
 
-**10 formal specifications | 992 conformance tests | 25 ADRs | Python SDK + .NET SDK + Rust core | 2,800+ stars | 300K+ monthly downloads**
+**10 formal specifications | 992 conformance tests | 25 ADRs | Python SDK + .NET SDK + Rust core | 4,300+ stars | 600+ forks | 300K+ monthly downloads**
 
 [![AGT](https://img.shields.io/github/stars/microsoft/agent-governance-toolkit?style=social&label=Agent%20Governance%20Toolkit)](https://github.com/microsoft/agent-governance-toolkit)
 
