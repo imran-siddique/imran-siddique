@@ -51,7 +51,7 @@ The repository includes Python, .NET, TypeScript, Go, and Rust SDKs, plus govern
 for coding agents. See its [documentation](https://github.com/microsoft/agent-governance-toolkit#readme)
 for current packages, installation paths, and supported integrations.
 
-[![Stars](https://img.shields.io/github/stars/microsoft/agent-governance-toolkit?style=flat-square)](https://github.com/microsoft/agent-governance-toolkit/stargazers)
+[![Stars](https://img.shields.io/github/stars/microsoft/agent-governance-toolkit?style=flat-square)](https://github.com/microsoft/agent-governance-toolkit)
 
 The published [OWASP Agentic Top 10 mapping](https://github.com/microsoft/agent-governance-toolkit/blob/main/docs/compliance/owasp-agentic-top10-architecture.md)
 self-assesses seven categories as full and three as partial: supply chain, memory/context
